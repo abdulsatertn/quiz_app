@@ -10,6 +10,14 @@ class QuestionsScreen extends StatefulWidget {
 }
 
 class _QuestionsScreenState extends State<QuestionsScreen> {
+  var currentQuestion = 0;
+
+  answerQuestion() {
+    setState(() {
+      currentQuestion++;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final currintQuestion = questions[0];
@@ -31,7 +39,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               height: 30,
             ),
             ...currintQuestion.getShuffledAnswers().map((answer) {
-              return AnswerButton(onTap: () {}, answerText: answer);
+              return AnswerButton(onTap: answerQuestion, answerText: answer);
             }),
           ],
         ),
