@@ -1,4 +1,4 @@
-![1](https://github.com/abdulsatertn/quiz_app/assets/114252885/745bc6ff-f02b-48ff-a5eb-dd75048265bc)# Flutter Quiz App
+# Flutter Quiz App
 
 This is a simple Flutter quiz app designed to test your knowledge about Flutter development. The app presents you with questions related to Flutter and provides four options to choose from. At the end of the quiz, it displays your score along with the correct answers.
 
